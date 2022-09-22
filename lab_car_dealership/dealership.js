@@ -4,9 +4,9 @@ const Dealership = function (name){
     let _InStock = [];
 
     this.getName = ()=> _name;
-    this.setName = (manufacturer)=> _manufacturer = manufacturer;
-    this.getPrice = ()=> _price;
-    this.setPrice = (price)=> _price = price;
-    this.getEngineType = ()=> _engineType;
-    this.setEngineType = (engineType)=> _engineType = engineType;
+    this.setName = (name)=> _name = name;
+    this.getMaximumCar = ()=> _MaximumCar;
+    this.setMaximumCar = (MaximumCar)=> _MaximumCar = MaximumCar;
+    this.getInStock = ()=> _InStock;
+    this.setInStock = (InStock)=> _InStock = InStock;
 }
