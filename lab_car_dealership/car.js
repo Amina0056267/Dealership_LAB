@@ -23,7 +23,7 @@ const Car = function (manufacturer, price, engineType){
         this.setElectrical = (electrical)=> _electrical = electrical;
     }
 
-    TextDecoderStream("")
+   
 
 
 

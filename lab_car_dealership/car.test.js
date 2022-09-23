@@ -1,12 +1,27 @@
 const car = require('./Car.js');
 
-describe("Car", () => {
-    TextDecoderStream("access the properties", () => {
-        let car =new car("m1", 0, "e1");
+const car = new Car('BMW', 1000, 2000);
 
-        expect(car.manufacturer).toBe("m1");
-        expect(car.price).toBe(0);
-        expect(car.engineType);
+describe("properties to access", () => {
+
+    test('getting the car manufactuerer', () => {
+        expected = "BMW";
+        actual = car.getManufacturer();
+        expect(actual).toBe(expected);
+      
+    });
+
+    test('getting the car price', () => {
+        expected = 1000;
+        actual = car.getPrice();
+        expect(actual).toBe(expected);
+      
+    });
+
+    test('getting the car engine type', () => {
+        expected = 2000;
+        actual = car.getManufacturer();
+        expect(actual).toBe(expected);
       
     });
 
