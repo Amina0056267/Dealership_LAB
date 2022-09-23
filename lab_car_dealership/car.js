@@ -1,7 +1,9 @@
-const Car = function (manufacturer){
-    let _manufacturer = manufacturer;
-    let _price = price;
-    let _engineType = engineType;
+const Car = function (manufacturer, price, engineType){
+    this._manufacturer = manufacturer;
+    this._price = price;
+    this._engineType = engineType;
+
+    module.exports = Car;
 
     this.getManufacturer = ()=> _manufacturer;
     this.setManufacturer = (manufacturer)=> _manufacturer = manufacturer;
@@ -20,6 +22,10 @@ const Car = function (manufacturer){
         this.getElectrical = ()=> _electrical;
         this.setElectrical = (electrical)=> _electrical = electrical;
     }
+
+    TextDecoderStream("")
+
+
 
 
     const BMW = new Car ('BMW');
