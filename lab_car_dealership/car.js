@@ -12,29 +12,16 @@ const Car = function (manufacturer, price, engineType){
     this.getEngineType = ()=> _engineType;
     this.setEngineType = (engineType)=> _engineType = engineType;
 
+}
+module.exports = Car ;
 
-    const engineType = function (thermal, electrical){
-        let _thermal = thermal;
-        let _electrical = electrical;
-
-        this.getThermal = ()=> _thermal;
-        this.setThermal = (thermal)=> _thermal = thermal;
-        this.getElectrical = ()=> _electrical;
-        this.setElectrical = (electrical)=> _electrical = electrical;
-    }
-
-   
-
-
-
-
-    const BMW = new Car ('BMW');
-    const Audi = new Car('Audi');
+const car1 = new Car ('BMW', 1000, 2000);
+    const Audi = new Car('Audi', 1000, 2000);
     console.log(BMW.getManufacturer());
     console.log(Audi.getManufacturer());
 
 
-}
+
 
 
 
